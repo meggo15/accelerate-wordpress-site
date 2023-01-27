@@ -21,16 +21,21 @@ get_header(); ?>
 	$services = get_field('services');
 	$client = get_field('client');
 	$link = get_field('site_link'); 
+	$image_1 = get_field('image_1');
+	$image_2 = get_field('image_2');
+	$image_3 = get_field('image_3');
+	$size = "full"; ?>
 	
 
 	<article class="case-study">
 		<aside class="case-study-sidebar">
 			<h2><?php the_title(); ?></h2>
-			<h4><?php echo $services; ?></h4>
+			<h5><?php echo $services; ?></h5>
+			<h6><?php echo $client; ?></h6>
  
 			<?php the_content(); ?>
 					
-			<p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site ›</a></p>
+			<p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site </a></p>
 		</aside>
 
 		<div class="case-study-images">
@@ -46,7 +51,7 @@ get_header(); ?>
 		</div>
 
 	</article>
-<?php endwhile; ?> // end of the loop. ?>
+<?php endwhile; ?>
 		</div>
 		<!-- .main-content -->
 

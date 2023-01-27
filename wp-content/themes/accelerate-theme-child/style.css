@@ -46,6 +46,16 @@
 	text-transform: uppercase;
 }
 
+.individual-featured-work {
+	list-style: none;
+	float: left;
+	padding-left: .75em;
+}
+.featured-work h4 {
+	text-align: center;
+}
+
+
 /* Case Studies*/
 
 aside .case-study-sidebar {
@@ -53,7 +63,7 @@ aside .case-study-sidebar {
 	width:300px;
 }
 
-div. .case-study-images {
+div .case-study-images {
 	float:left;
 	width:300px;
 }
