@@ -55,15 +55,65 @@
 	text-align: center;
 }
 
+.individual-featured-work h3 {
+	text-align: center;
+	font-size: 1em
+}
+
+.social-media-navigation li {
+	list-style: none;
+	float: left;
+	padding-left: 1em;
+
+}
+.wp_nav_menu {
+	color:blue;
+	border-radius: 50px;
+}
 
 /* Case Studies*/
+
+aside .case-study {
+	margin: 40px 0 0;
+}
 
 aside .case-study-sidebar {
 	float:left;
 	width:300px;
+	margin: 0 40px 0 0;
+	
 }
 
 div .case-study-images {
-	float:left;
 	width:300px;
+	float: left;
+	padding-bottom: 30px;
+	display: block;
+}
+
+div.case-study-images img {
+	display: inline;
+	padding-bottom: 30px;
+}
+
+
+/* Case Study Archive*/
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+}
+
+/* Contact Us*/
+.nf-form-fields-required {
+	display: none;
+  }
+
+  .ninja-forms-req-symbol {
+	display: none;
+  }
+
+  #nf-field-4.ninja-forms-field.nf-element{
+	  float: right;
+	  background-color: #45ac9d;
 }
