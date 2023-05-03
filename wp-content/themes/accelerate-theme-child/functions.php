@@ -42,7 +42,6 @@ function create_custom_post_types() {
             'singular_name' => __( 'About Service' )
         ),
         'public' => true,
-        'has_archive' => true,
         'rewrite' => array( 'slug' => 'about-services' ),
     )
 );

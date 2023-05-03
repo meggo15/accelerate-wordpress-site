@@ -10,6 +10,8 @@
 * @since Accelerate Marketing 2.0
 */
 
+
+
 get_header(); ?>
 
 	<div id="primary" class="site-content">
@@ -18,21 +20,17 @@ get_header(); ?>
             
 <?php while ( have_posts() ) : the_post();	
 	$title = get_field('service_title');
-	$description= get_field('service_description');
 	$graphic = get_field('graphic');
-
-	$size = "full"; ?>
+	$size = "thumbnail"; ?>
 	
 
 	<article class="about-services">
 		<aside class="about-services-sidebar">
 			<h5><?php echo $title; ?></h5>
-			<h6><?php echo $descripton; ?></h6>
- 
-			<?php the_content(); ?>
+			<h6><?php the_content(); ?></h6>
 		</aside>
 
-		<div class="case-study-images">
+		<div class="about-services-images">
 		<?php if($graphic) {
 			echo wp_get_attachment_image( $graphic, $size);
 		} ?>
@@ -47,3 +45,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
